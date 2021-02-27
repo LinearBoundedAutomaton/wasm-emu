@@ -18,3 +18,12 @@ Pull the repo
 
 Compile
 > make
+
+
+To compile a version of the project that comes packaged with a ui, run:
+> make mainui
+
+If python is installed, you can use:
+> make serve
+
+to serve the contents of the build folder. This is provided for convenience.
