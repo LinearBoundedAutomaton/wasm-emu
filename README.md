@@ -15,5 +15,6 @@ To compile the core project:
 Pull the repo
 > git pull https://github.com/LinearBoundedAutomaton/wasm-emu.git
 > cd ./wasm-emu/core
+
 Compile
 > make
