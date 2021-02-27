@@ -1,3 +1,6 @@
 
+#MAC elements
+.DS_Store
+
 #CORE PROJECT IGNORES
 /core/build
