@@ -7,7 +7,7 @@ int main(int argc, char **argv){
     printf("Creating memory segment\n");
     int8_t * memory;
     initMemory(memory);
-    printf("\"Powering up\" processor!\n");
+    printf("Initializing processor..\n");
     initCPU(memory);
     printf("Initialized processor!\n");
     int i = 0;
