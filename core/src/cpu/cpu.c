@@ -60,3 +60,8 @@ void cpuRun(){
     execInstruction(currentInstruction);
     registers->IP = registers->IP + currentInstruction->size;
 }
+
+
+void execCycle(){
+    
+}
