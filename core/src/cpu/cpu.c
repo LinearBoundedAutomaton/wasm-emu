@@ -39,7 +39,10 @@ void initCPU(void * targetMemory){
 
 
 void execInstruction(Instruction * instr){
-    
+    switch(instr->type){
+        case ADD:
+            break;
+    }
 }
 
 
@@ -47,21 +50,13 @@ void execInstruction(Instruction * instr){
 void cpuRunLimited(int cycleCount){
     int currentCycle = 0;
     for(currentCycle = 0; currentCycle < cycleCount; currentCycle++){
-        fetchAndDecodeInstruction(registers->IP, registers, currentInstruction);
-        execInstruction(currentInstruction);
-        registers->IP = registers->IP + currentInstruction->size;
+        execCycle();
     }
 }
 
 
-
-void cpuRun(){
+void execCycle(){
     fetchAndDecodeInstruction(registers->IP, registers, currentInstruction);
     execInstruction(currentInstruction);
     registers->IP = registers->IP + currentInstruction->size;
-}
-
-
-void execCycle(){
-    
 }
