@@ -14,6 +14,7 @@ typedef enum {
     OR,
     ADC,
     SBB,
+    AND,
     DAA,
     SUB,
     DAS,
